@@ -106,7 +106,7 @@ if(WITH_JAVA)
 endif()
 add_custom_target(installer
   makensis -nocd ${INST_DEFS} installer.nsi
-  DEPENDS jpeg jpeg-static turbojpeg turbojpeg-static rdjpgcom wrjpgcom
+  DEPENDS jpeg turbojpeg rdjpgcom wrjpgcom
     cjpeg djpeg jpegtran tjbench ${JAVA_DEPEND}
   SOURCES installer.nsi)
 
